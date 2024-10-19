@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarDownload</title>
+    <style>
+        a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #0cf;
+            padding: 10px 15px;
+            border-radius: 10px;
+            color: #fff;
+            transition: all 0.5s;
+        }
+        img{
+            width: 60px;
+            border-radius: 10px;
+        }
+        img[src='yuzu.png']{
+            width: 40px;
+        }
+        .content{
+            max-width: max-content;
+        }
+        h1{
+            background: linear-gradient(45deg, #0cf, #00FFA3);
+            background-clip: text;
+            color: transparent;
+            font-size: 40px;
+            margin: 0;
+            margin-bottom: 50px;
+        }
+        body{
+            background: rgb(0, 42, 52) url('rb_2149154553.png');
+            background-blend-mode: luminosity;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .container{
+            text-align: center;
+            background-color: rgba(0, 42, 52, 0.578);
+            padding: 40px;
+            border-radius: 20px;
+            border: 2px solid #fff;
+        }
+        .container::before{
+            content: "";
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.202);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: all 0.5s ;
+        }
+        .container:hover::before{
+            backdrop-filter: blur(10px);
+        }
+        a:hover{
+            scale: 1.05;
+           box-shadow: 0px 0px 5px 5px #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Download Game Yuzu</h1>
+        <div class="content">
+            <a target="_blank" href="https://drive.google.com/file/d/1-AXiIQgd407Sv8gknaAYR9kITcHC-APv/view" > <img src="yuzu.png" alt="emulator yuzu">Emulator yuzu & Prodkey</a><br>
+            <a target="_blank" href="https://www.mediafire.com/file/1nbco4o6uvo609m/%255BTendoku.com%255D_NARUTO_SHIPPUDEN_ULTIMATE_NINJA_STORM_4_ROAD_TO_BORUTO%255B01003F800CF5C000%255D.nsp/file"> <img src="capsule_616x353.jpg" alt="">NARUTO SHIPPUDEN: Ultimate Ninja STORM 4 Road to Boruto</a><br>
+            <a target="_blank" href="https://qiwi.gg/file/rVLL4605-Tendoku"> <img src="naruto-x-boruto-ultimate-ninja-storm-connections.jpg" alt="">NARUTO X BORUTO Ultimate Ninja STORM CONNECTIONS</a><br>
+        </div>
+    </div>
+</body>
+</html>
